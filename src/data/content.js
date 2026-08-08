@@ -118,7 +118,7 @@ export const about = {
 export const experience = {
   eyebrow: '02 — Experience',
   title: 'A record in production.',
-  aside: '2021 →\nnow',
+  aside: '2023 →\nnow',
   jobs: [
     {
       period: 'Mar 2023 — Present',
@@ -197,7 +197,7 @@ export const experience = {
 export const projects = {
   eyebrow: '03 — Selected Work',
   title: 'Things that shipped.',
-  aside: 'Six\nbuilds',
+  aside: 'Seven\nbuilds',
   items: [
     {
       no: 'P / 01',
