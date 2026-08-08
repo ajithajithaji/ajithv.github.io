@@ -23,9 +23,8 @@ export const profile = {
   phone: '+91 90720 20497',
   availability: 'Open to consulting, implementation and ERP customisation work',
   cvUrl: '/CV.pdf',                  // drop your CV in /public and rename it CV.pdf
-  photos: ['/profile.jpg', '/profile-alt.jpg'],
-  photoAlt: 'Ajith V',
-  photoMode: 'hover', 
+  photo: '/profile.jpg',             // swap for '/profile-alt.jpg' or your own file in /public
+  photoAlt: 'Ajith V', 
   // Replace the # placeholders with your real profile URLs.
   // `label` picks the icon in src/components/SocialIcon.jsx and is used as the
   // accessible name. `handle` only shows on the contact page.
