@@ -1,3 +1,4 @@
+import { asset } from '../assets'
 import { about, profile } from '../data/content'
 import Section from './Section'
 
@@ -6,7 +7,7 @@ export default function About() {
     <Section id="about" eyebrow={about.eyebrow} title={about.title} aside={about.aside}>
       <div className="about__grid">
         <div className="about__portrait">
-          <img src={profile.photo} alt={profile.photoAlt} loading="lazy" width="1100" height="1466" />
+          <img src={asset(profile.photo)} alt={profile.photoAlt} loading="lazy" width="1100" height="1466" />
           <div className="about__caption">
             <span>{profile.displayName}</span>
             <span>{profile.city} · {profile.location}</span>

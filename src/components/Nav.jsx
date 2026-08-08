@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { asset } from '../assets'
 import { nav, profile } from '../data/content'
 import { useActiveSection, useScrolled } from '../hooks'
 import { goToSection, navigate } from '../router'
@@ -61,7 +62,7 @@ export default function Nav({ page }) {
           </nav>
 
           <div className="nav__cta">
-            <a className="btn btn--ghost" href={profile.cvUrl} target="_blank" rel="noreferrer">CV</a>
+            <a className="btn btn--ghost" href={asset(profile.cvUrl)} target="_blank" rel="noreferrer" download>CV</a>
             <a className="btn btn--solid" href="?p=contact" onClick={goContact}>Hire me</a>
             <button
               className={`nav__burger${open ? ' open' : ''}`}

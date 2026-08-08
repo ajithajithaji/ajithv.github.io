@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { asset } from '../assets'
 import { deployLabel, deployLog, heroDomains, profile } from '../data/content'
 import Rich from './Rich'
 
@@ -58,7 +59,7 @@ export default function Hero({ start }) {
             <div className="hero__actions">
               <a className="btn btn--solid" href="#work">View experience →</a>
               <a className="btn" href="#contact">Get in touch</a>
-              <a className="btn" href={profile.cvUrl} target="_blank" rel="noreferrer">Download CV ↓</a>
+              <a className="btn" href={asset(profile.cvUrl)} target="_blank" rel="noreferrer" download>Download CV ↓</a>
             </div>
           </div>
 
